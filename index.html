@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Html form</title>
+        <script src="https://kit.fontawesome.com/5dd66bf8d0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="form">
+            <div class="header">Payment form example</div>
+            <div>
+                <div class="alert alert-danger" role="alert">
+                    some fields are missing
+                  </div>
+                <div class="card-info">
+                    <fieldset class="ccn">
+                        <label for="card-number">Card #</label>
+                        <input inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                    </fieldset>
+                    <fieldset class="cvc">
+                        <label for="cvc">CVC #</label>
+                        <input inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cvc" maxlength="4" placeholder="0000">
+                    </fieldset>
+                    <fieldset class="amount">
+                        <label for="money-amount">Amount</label>
+                        <i class="fa-solid fa-dollar-sign fa-sm" style="color: #000000;"></i>
+                        <input inputmode="numeric" pattern="[0-9\s]{13,19}" placeholder="Amount">
+                    </fieldset>
+                </div>
+                <div class="form-body">
+                    <div class="body1">
+                        <fieldset>
+                            <label for="name">First name</label>
+                            <input type="text" placeholder="Name">
+                        </fieldset>
+                        <fieldset>    
+                            <label for="City">City</label>
+                            <input type="text" placeholder="City name">
+                        </fieldset>
+                        <fieldset>    
+                            <label for="Payment type">We accept:</label>
+                        <div class="Payment-type">    
+                            <label for="visa"><i class="fa-brands fa-cc-visa fa-xl" style="color: #000000;"></i></label>
+                            <input type="radio" id="cc-visa" name="Payment method" value="cc-visa">
+                            <label for="mastercard"><i class="fa-brands fa-cc-mastercard fa-xl" style="color: #000000;"></i></label>
+                            <input type="radio" id="cc-mastercard" name="Payment method" value="cc-mastercard">
+                            <label for="dinersclub"><i class="fa-brands fa-cc-diners-club fa-xl" style="color: #000000;"></i></label>
+                            <input type="radio" id="cc-dinersclub" name="Payment method" value="cc-dinersclub">
+                            <label for="PayPal"><i class="fa-brands fa-cc-paypal fa-xl" style="color: #000000;"></i></label>
+                            <input type="radio" id="PayPal" name="Payment method" value="PayPal">
+                        </div>    
+                        </fieldset>    
+                    </div>
+                    <div class="body2">
+                        <fieldset>
+                            <label for="name">Last name</label>
+                            <input type="text" placeholder="Last name">
+                        </fieldset>
+                        <div class="residency">
+                            <fieldset class="droplist">
+                                <label for="state">State</label>
+                                <select name="state" id="state">
+                                  <option value="R.M">R.M</option>
+                                  <option value="1RA region">1RA region</option>
+                                  <option value="2DA region">2DA region</option>
+                                  <option value="3RA region">3RA region</option>
+                                  <option value="4TA region">4TA region</option>
+                                </select>   
+                            </fieldset>
+                            <fieldset class="codigo-postal">
+                                <label for="codigo-postal">Codigo-postal</label>
+                                <input inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="codigo-postal" maxlength="4" placeholder="0000">
+                            </fieldset>
+                        </div>
+                        <fieldset>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="footer">
+                    <button type="button" class="btn btn-secondary">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button> 
+                </div>
+            </div>
+        </div>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </body>
+</html>
