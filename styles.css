@@ -16,6 +16,7 @@
 .ccn {
     display: flex;
     flex-direction: column;
+    width: 300px;
 } 
 label {
     font: bold;
@@ -28,11 +29,13 @@ input {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    width: 300px;
 } 
 .amount {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    width: 300px;
 } 
 .form-body {
     display: flex;
@@ -70,3 +73,7 @@ input {
 .btn {
     margin-left: 5px;
 }
+.text-bg-dark{
+    padding: 5px;
+}
+
