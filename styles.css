@@ -1,6 +1,6 @@
 .form {
     height: 800px;
-    width: 1000px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,67 +8,8 @@
     font-size: large;
     padding: 10px;
 }
-.card-info {
-    display: flex;
-    flex-direction: row;
-}
-
-.ccn {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-} 
-label {
-    font: bold;
-}
-input {
-    border-radius: 5px;
-
-}
-.cvc {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    width: 300px;
-} 
-.amount {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    width: 300px;
-} 
-.form-body {
-    display: flex;
-}
-.body1 fieldset{
-    display: flex;
-    flex-direction: column;
-}
-.body2 fieldset{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
 .payment-type{
-    display: flex;
-    flex-direction: row;
-    border:black 2px;
-}
-.residency {
-    display: flex;
-    flex-direction: row;
-}
-.droplist #state{
-    border-radius: 5px;
-    height: 27px;
-    width: 219px;
-
-}
-.footer {
-    display: flex;
-    justify-content: right;
-    align-items: flex-end;
-    padding: 20px;
+    justify-content: space-between;
 }
 .btn {
     margin-left: 5px;
@@ -76,4 +17,3 @@ input {
 .text-bg-dark{
     padding: 5px;
 }
-
